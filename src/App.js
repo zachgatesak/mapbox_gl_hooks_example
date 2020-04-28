@@ -23,6 +23,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="sidebarStyle">
+        Longitude: {mapMeta.lng} | Latitude: {mapMeta.lat} | Zoom:{" "}
+        {mapMeta.zoom}
+      </div>
       <div className="mapContainer" ref={(el) => (mapContainer = el)} />
     </div>
   );
